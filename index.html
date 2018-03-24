@@ -26,19 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About me</a>
+              <a class="nav-link" href="#about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Education</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
+              <a class="nav-link" href="#contact">Contact me</a>
             </li>
           </ul>
           <div class="my-2 my-lg-0">
@@ -50,17 +47,62 @@
 
     <div class="container">
       <div class="portfolio-wrapper">
-        <section class="about-section bg-transparent">
-          <div class="col-md-6 text-center">
-            <h1>Developper <span class="text-primary">Space lover</span></h1>
-            <p>
-              Qui cupidatat amet non in amet consectetur laborum irure incididunt elit excepteur qui culpa. 
-              Ex dolore pariatur ut nulla culpa tempor proident mollit nisi dolor. Veniam id nisi ad aute sit 
-              velit in cupidatat commodo magna aute. Enim deserunt anim elit aute id ex aute aliqua aute laboris.
-            </p>
-            <button class="btn btn-primary mt-3">READ MORE</button>
+
+        <!-- Home -->
+        <section id="home"  class="home-section bg-transparent">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <h1>Developper <span class="text-primary">Space lover</span></h1>
+              <p>
+                Qui cupidatat amet non in amet consectetur laborum irure incididunt elit excepteur qui culpa. 
+                Ex dolore pariatur ut nulla culpa tempor proident mollit nisi dolor. Veniam id nisi ad aute sit 
+                velit in cupidatat commodo magna aute. Enim deserunt anim elit aute id ex aute aliqua aute laboris.
+              </p>
+              <button class="btn btn-primary m-4">READ MORE</button>
+            </div>
           </div>
         </section>
+
+        <!-- About -->
+        <section class="about-section bg-primary-linear">
+          <div class="row mt-4" id="about">
+            <div class="col-md-7 text-right">
+              <h3>Creative, Imaginative<br>Passionate</h3>
+              <p>
+                Qui cupidatat amet non in amet consectetur laborum irure incididunt elit excepteur qui culpa. 
+                Ex dolore pariatur ut nulla culpa tempor proident mollit nisi dolor. Veniam id nisi ad aute sit 
+                velit in cupidatat commodo magna aute. Enim deserunt anim elit aute id ex aute aliqua aute laboris.
+                Mollit deserunt anim laboris cillum nulla exercitation nostrud magna quis sit veniam minim mollit. 
+                Laboris deserunt irure ut proident pariatur velit. Voluptate occaecat minim cillum nisi commodo.
+                Duis aliqua sit id mollit consequat pariatur non velit est.
+              </p>
+            </div>
+            <div class="col-md-5 text-left">
+              <h2>EDUCATION</h2>
+                <h3><span class="text-primary">2017 - 2020</span><br>Master of Science</h3>
+                <h3><span class="text-primary">2015 - 2017</span><br>BTS SIO</h3>
+                <h3><span class="text-primary">2013 - 2015</span><br>BAC STMG</h3>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="project-section bg-secondary">
+          <div class="row" id="projects">
+            <div class="col-md-12 text-center">
+              <h3>MY FAVORITES PROJECTS</h3>
+              <nav class="tri">
+                  <ul>
+                      <li id="both" class="active">Design</li>
+                      <li id="unlocked">Web</li>
+                      <li id="locked">Other</li>
+                  </ul>
+                  <div class="clear"></div>
+              </nav>
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
 
