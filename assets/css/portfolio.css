@@ -1,0 +1,98 @@
+html {
+  background-image: url('../image/backnoise.png');
+  background-color: #9b928f;
+}
+
+body {
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+}
+
+/*
+ * Colors 
+ */
+
+.bg-primary {
+  color: rgb(51, 51, 51) !important;
+}
+
+.bg-secondary {
+  color: rgb(100, 100, 100) !important;
+}
+
+.bg-transparent {
+  color: transparent !important;
+}
+
+.btn-primary {
+  color: #ff6252 !important;
+}
+
+/*
+ * Navbar
+ */
+.navbar-custom {
+  margin-top:0px;
+  padding-top:0px;
+}
+
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+
+.navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 30px 15px 30px 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover, .navbar-custom .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-custom .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-custom .navbar-nav .show > .nav-link,
+.navbar-custom .navbar-nav .active > .nav-link,
+.navbar-custom .navbar-nav .nav-link.show,
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #fff;
+  background-color: #ff6252;
+}
+
+.navbar-custom .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .navbar-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-custom .navbar-text a {
+  color: #fff;
+}
+
+.navbar-custom .navbar-text a:hover, .navbar-custom .navbar-text a:focus {
+  color: #fff;
+}
+
+.nav-social:link, .nav-social:visited {
+  color: #333333;
+  font-size: 25px;
+}
+
+.nav-social:hover, .navbar:active {
+  color: #ff6252;
+}
