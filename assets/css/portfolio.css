@@ -1,5 +1,5 @@
 html {
-  background-image: url('../image/backnoise.png');
+  background-image: url('../image/astronautBackground.jpg');
   background-color: #9b928f;
 }
 
@@ -13,19 +13,70 @@ body {
  */
 
 .bg-primary {
-  color: rgb(51, 51, 51) !important;
+  background-color: rgb(51, 51, 51) !important;
 }
 
 .bg-secondary {
-  color: rgb(100, 100, 100) !important;
+  background-color: rgb(100, 100, 100) !important;
 }
 
 .bg-transparent {
-  color: transparent !important;
+  background-color: transparent !important;
 }
 
+.text-primary {
+  color: #ff5744 !important;
+}
+
+/*
+ * Button Override
+ */
 .btn-primary {
-  color: #ff6252 !important;
+  color: #fff;
+  background-color: #ff6252;
+  border-color: #ff6252;
+  border-radius: 0px;
+  padding: 5px 25px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ff5744;
+  border-color: #fd503d;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgb(255, 98, 82, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #ff6252;
+  border-color: #ff6252;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ff6252;
+  border-color: #ff6252;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(255, 98, 82, 0.5);
+}
+
+/*
+ * Titles style
+ */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 3.8rem;
+  margin-bottom: 2rem;
 }
 
 /*
@@ -89,10 +140,40 @@ body {
 }
 
 .nav-social:link, .nav-social:visited {
-  color: #333333;
+  color: #fff;
   font-size: 25px;
 }
 
 .nav-social:hover, .navbar:active {
   color: #ff6252;
+}
+
+/*
+ * Portfolio wrapper
+ */
+.portfolio-wrapper{
+  margin-top: 10vh;
+  background-color: transparent;
+  border-top: 1px solid rgba(34, 34, 34, 0.855);
+  border-bottom: 1px solid rgba(34, 34, 34, 0.855);
+  border-right: 1px solid rgba(34, 34, 34, 0.855);
+  border-left: 1px solid rgba(34, 34, 34, 0.855);
+  border-radius: 2px;
+  
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
+  box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
+}
+
+/*
+ * About Section
+ */
+.about-section{
+  color: whitesmoke;
+  margin: 100px 50px;
+}
+@media (min-width: 768px) {
+  .about-section{
+    padding: 10px;
+  }
 }
