@@ -11,10 +11,29 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+
+
+/*
+ * Portfolio wrapper
+ */
+ .portfolio-wrapper{
+  z-index: 2;
+  margin-top: 10vh;
+  background-color: transparent;
+  border-top: 1px solid rgba(34, 34, 34, 0.855);
+  border-bottom: 1px solid rgba(34, 34, 34, 0.855);
+  border-right: 1px solid rgba(34, 34, 34, 0.855);
+  border-left: 1px solid rgba(34, 34, 34, 0.855);
+  border-radius: 2px;
+  
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
+  box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
+}
+
 /*
  * Colors 
  */
-
 .bg-primary {
   background-color: #2b2b2f !important;
 }
@@ -118,9 +137,7 @@ h1 {
   color: rgba(255, 255, 255, 0.25);
 }
 
-.navbar-custom .navbar-nav .show > .nav-link,
 .navbar-custom .navbar-nav .active > .nav-link,
-.navbar-custom .navbar-nav .nav-link.show,
 .navbar-custom .navbar-nav .nav-link.active {
   color: #fff;
   background-color: #ff6252;
@@ -154,23 +171,6 @@ h1 {
 
 .nav-social:hover, .navbar:active {
   color: #ff6252;
-}
-
-/*
- * Portfolio wrapper
- */
-.portfolio-wrapper{
-  margin-top: 10vh;
-  background-color: transparent;
-  border-top: 1px solid rgba(34, 34, 34, 0.855);
-  border-bottom: 1px solid rgba(34, 34, 34, 0.855);
-  border-right: 1px solid rgba(34, 34, 34, 0.855);
-  border-left: 1px solid rgba(34, 34, 34, 0.855);
-  border-radius: 2px;
-  
-  -webkit-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
-  -moz-box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
-  box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.9);
 }
 
 /*
@@ -278,4 +278,112 @@ h1 {
 
 .project-img:hover {
   border: 5px solid #ff6252;
+}
+
+/*
+ * Contact Section
+ */
+.contact-section {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  background-color: #222; 
+  color: whitesmoke;
+  padding: 220px 0px 20px 0px;
+  margin: -150px 0px 0px 0px;
+}
+
+.contact-img {
+  border: 3px solid #333;
+}
+
+#contact-fail{ 
+  display: none;
+}
+#contact:hover #contact-fail{
+  display : block;
+}
+#contact:hover #contact-form{
+  display : none;
+}
+
+/*
+ * Form Override
+ */
+.form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 2rem;
+  color: whitesmoke;
+  background-color: #495057;
+  background-clip: padding-box;
+  border: 1px solid #34383d;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-control:focus {
+  color: whitesmoke;
+  background-color: #495057;
+  border-color: #ff6252;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 98, 82, 0.5);
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(245, 245, 245, 0.75);
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: rgba(245, 245, 245, 0.75);
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: rgba(245, 245, 245, 0.75);
+  opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+  color: rgba(245, 245, 245, 0.75);
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: rgba(245, 245, 245, 0.75);
+  opacity: 1;
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+
+select.form-control:focus::-ms-value {
+  color: rgba(245, 245, 245, 0.75);
+  background-color: #495057;
+}
+
+.form-control-file,
+.form-control-range {
+  display: block;
+  width: 100%;
+}
+
+/*
+ * Footer
+ */
+.footer{
+  color: whitesmoke;
+  border-top: 2px solid rgba(245, 245, 245, 0.75);
+  padding: 25px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
 }
