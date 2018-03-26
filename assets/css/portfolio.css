@@ -338,6 +338,12 @@ h1 {
   box-shadow: 0 0 0 0.2rem rgba(255, 98, 82, 0.5);
 }
 
+.form-control:disabled {
+  color: whitesmoke;
+  background-color: #495057;
+  outline: 0;
+}
+
 .form-control::-webkit-input-placeholder {
   color: rgba(245, 245, 245, 0.75);
   opacity: 1;
