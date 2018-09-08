@@ -1,3 +1,7 @@
+
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css?family=Lato|Marck+Script');
+
 html {
   background-image: url('../image/astronautBackgroundLinear.jpg');
   background-position: top center;
@@ -10,8 +14,6 @@ body {
   background-color: transparent;
   font-family: 'Lato', sans-serif;
 }
-
-
 
 /*
  * Portfolio wrapper
@@ -156,12 +158,16 @@ h1 {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar-custom .navbar-text a {
+.navbar-custom .navbar-text {
   color: #fff;
 }
 
 .navbar-custom .navbar-text a:hover, .navbar-custom .navbar-text a:focus {
   color: #fff;
+}
+
+.nav-social {
+  margin-left: 5px;
 }
 
 .nav-social:link, .nav-social:visited {
